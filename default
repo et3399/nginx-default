@@ -4,7 +4,7 @@ server {
     listen 8080;
     listen [::]:8080;
     root /home/site/wwwroot/public;
-    index  index.php index.html index.htm info.php;
+    index  index.php index.html index.htm;
     server_name  example.com www.example.com; 
 
     location / {            
