@@ -1,4 +1,5 @@
 server {
+    client_max_body_size 512M;
     #proxy_cache cache;
         #proxy_cache_valid 200 1s;
     listen 8080;
@@ -14,10 +15,10 @@ server {
 
     # redirect server error pages to the static page /50x.html
     #
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {
-        root   /html/;
-    }
+    # error_page   500 502 503 504  /50x.html;
+    # location = /50x.html {
+    #     root   /html/;
+    # }
 
     # Disable .git directory
     location ~ /\.git {
